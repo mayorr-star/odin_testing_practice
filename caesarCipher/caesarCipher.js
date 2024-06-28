@@ -17,9 +17,7 @@ function caesarCipher(str, shiftFactor = 1) {
         charCode = charCode - 97 + 121;
       }
     }
-    console.log(charCode)
     return charCode
   }).map(char => String.fromCharCode(char)).join("");
 }
-console.log(caesarCipher("xyz", 3))
 module.exports = caesarCipher;
